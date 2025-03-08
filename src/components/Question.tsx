@@ -7,7 +7,7 @@ interface QuestionProps {
   handleAnswer: (option: string) => void;
 }
 
-const Question: React.FC<QuestionProps> = ({ question, selectedOption, isCorrect, handleAnswer }) => {
+const Question: React.FC<QuestionProps> = ({ question, selectedOption, handleAnswer }) => {
   return (
     <div className="mt-6">
       <h2 className="text-lg font-semibold">{question.question}</h2>
